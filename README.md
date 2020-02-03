@@ -15,6 +15,15 @@ This development setup has only been tested on MacOS.
 - After ddev has started run `ddev exec composer install`
 - Start working you slacker!
 
+__Note__:
+If you have a password on your ssh keys you will need to do the below.
+
+Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.
+
+```$ ssh-add -K ~/.ssh/id_rsa```
+
+Also it may be needed to uncheck "Securely store Docker logins in macOS keychain" in Docker preferences.
+
 ## MongoDB:
 - You can access the MongoDB Express web viewer by going to warden.ddev.site:8081
 - The mongo javascript cli is installed on the mongo db container.
@@ -28,12 +37,3 @@ This development setup has only been tested on MacOS.
 `$config['warden.settings']['warden_allow_requests'] = true;`
 
 `$config['warden.settings']['warden_public_allow_ips'] = 'SITE_IP_HERE';`
-
-__Note__:
-If you have a password on your ssh keys you will need to do the below.
-
-Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.
-
-```$ ssh-add -K ~/.ssh/id_rsa```
-
-Also it may be needed to uncheck "Securely store Docker logins in macOS keychain" in Docker preferences.
