@@ -6,7 +6,7 @@
 git ls-remote git@github.com:teamdeeson/warden.git &> /dev/null
 GIT_CHECK=$?
 if [ "$?" -ne 0 ]; then
-    echo "[ERROR] Unable to read from drupal7"
+    echo "[ERROR] Unable to read from warden"
     exit 1
 fi
 
