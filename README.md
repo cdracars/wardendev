@@ -23,11 +23,9 @@ This development setup has only been tested on MacOS.
 ## Drupal Module Setup:
 - add warden settings to settings.php
 
-`$config['warden.settings']['warden_server_host_path'] = 'https://ddev-warden-web';
-
-$config['warden.settings']['warden_allow_requests'] = true;
-
-$config['warden.settings']['warden_public_allow_ips'] = 'SITE_IP_HERE';`
+`$config['warden.settings']['warden_server_host_path'] = 'https://ddev-warden-web';'
+'$config['warden.settings']['warden_allow_requests'] = true;'
+'$config['warden.settings']['warden_public_allow_ips'] = 'SITE_IP_HERE';`
 
 __Note__:
 If you have a password on your ssh keys you will need to do the below.
