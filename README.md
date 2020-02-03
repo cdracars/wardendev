@@ -12,6 +12,7 @@ This development setup has only been tested on MacOS.
 ``` git clone git@github.com:cdracars/wardendev.git .ddev```
 - run `ddev rm --unlist` (_only if you had previously installed this and need to move it_)
 - run `ddev start`
+- After ddev has started run `ddev exec composer install`
 - Start working you slacker!
 
 __Note__:
