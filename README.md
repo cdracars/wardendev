@@ -24,7 +24,9 @@ This development setup has only been tested on MacOS.
 - add warden settings to settings.php
 
 `$config['warden.settings']['warden_server_host_path'] = 'https://ddev-warden-web';`
+
 `$config['warden.settings']['warden_allow_requests'] = true;`
+
 `$config['warden.settings']['warden_public_allow_ips'] = 'SITE_IP_HERE';`
 
 __Note__:
