@@ -2,7 +2,7 @@
 parameters:
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
-    protocol: http
+    protocol: https
     db_host: mongo
     db_port: 27017
     db_name: warden

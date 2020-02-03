@@ -11,8 +11,10 @@ if [ "$?" -ne 0 ]; then
 fi
 
 if [ ! -f "phpunit.xml.dist" ]; then
-    git clone https://github.com/teamdeeson/warden.git .
+    git clone https://github.com/teamdeeson/warden.git
+    mv warden/* .
+    rm -rf warden
     mv web/app.php web/index.php
     cp .ddev/parameters.yml app/config/parameters.yml
-    sudo chown -nR $(ls -dln | awk '{print $3":"$4}') warden
+    sudo chown -nR $(ls -dln | awk '{print $3":"$4}') .
 fi
