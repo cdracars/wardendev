@@ -1,0 +1,20 @@
+# This file is auto-generated during the composer install
+parameters:
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    protocol: http
+    db_host: mongo
+    db_port: 27017
+    db_name: warden
+    db_username: db
+    db_password: db
+    public_key_file: '%kernel.root_dir%/config/key.public'
+    private_key_file: '%kernel.root_dir%/config/key.private'
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_port: 25
+    mailer_user: null
+    mailer_password: null
+    warden.email.sender_address: ''
+    warden.email.dashboard.alert_address: ''
+    warden.dashboard.slack.hook_url: ''
