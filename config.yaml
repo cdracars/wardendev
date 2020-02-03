@@ -18,6 +18,7 @@ hooks:
     - exec-host: bash .ddev/scripts/setup.sh
   post-start:
     - exec-host: bash .ddev/scripts/mongo_setup.sh
+    - exec-host: ddev exec composer install
 
 
 # This config.yaml was created with ddev version v1.12.2
