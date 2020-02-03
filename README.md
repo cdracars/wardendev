@@ -15,6 +15,10 @@ This development setup has only been tested on MacOS.
 - After ddev has started run `ddev exec composer install`
 - Start working you slacker!
 
+## MongoDB:
+- You can access the MongoDB Express web viewer by going to warden.ddev.site:8081
+- The mongo javascript cli is installed on the mongo db container.
+
 __Note__:
 If you have a password on your ssh keys you will need to do the below.
 
