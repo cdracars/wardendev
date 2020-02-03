@@ -23,3 +23,24 @@ Add your SSH private key to the ssh-agent and store your passphrase in the keych
 ```$ ssh-add -K ~/.ssh/id_rsa```
 
 Also it may be needed to uncheck "Securely store Docker logins in macOS keychain" in Docker preferences.
+
+## MongoDB:
+- You can access the MongoDB Express web viewer by going to warden.ddev.site:8081
+- The mongo javascript cli is installed on the mongo db container.
+
+## Drupal Module Setup:
+- add warden settings to settings.php
+
+`$config['warden.settings']['warden_server_host_path'] = 'https://ddev-warden-web';`
+
+`$config['warden.settings']['warden_allow_requests'] = true;`
+
+`$config['warden.settings']['warden_public_allow_ips'] = 'SITE_IP_HERE';`
+
+## Importing Sites:
+- Add site from the drupal side (SITEURL/admin/config/system/warden)
+- After adding site to warden run `ddev share` and copy the ngrok url
+- Go to warden site and edit site to use the ngrok URL instead of the imported one.
+
+__Note__:
+Every `ddev share` will change the ngrok URL.
