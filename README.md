@@ -27,7 +27,6 @@ Also it may be needed to uncheck "Securely store Docker logins in macOS keychain
 ## MongoDB:
 - You can access the MongoDB Express web viewer by going to warden.ddev.site:8081
 - The mongo javascript cli is installed on the mongo db container.
-- May need to alter the site url after adding to get it to work. (https/http) http://warden.ddev.site:8081/db/warden/sites
 
 ## Drupal Module Setup:
 - add warden settings to settings.php
@@ -37,3 +36,11 @@ Also it may be needed to uncheck "Securely store Docker logins in macOS keychain
 `$config['warden.settings']['warden_allow_requests'] = true;`
 
 `$config['warden.settings']['warden_public_allow_ips'] = 'SITE_IP_HERE';`
+
+## Importing Sites:
+- Add site from the drupal side (SITEURL/admin/config/system/warden)
+- After adding site to warden run `ddev share` and copy the ngrok url
+- Go to warden site and edit site to use the ngrok URL instead of the imported one.
+
+__Note__:
+Every `ddev share` will change the ngrok URL.
